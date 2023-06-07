@@ -1,0 +1,29 @@
+GET http://localhost:3000/players/ HTTP/1.1
+###
+
+POST http://localhost:3000/players/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "playerId": 12,
+    "playerName": "Ajay",
+    "jerseyNumber": 27,
+    "role": "All-rounder"
+}
+###
+
+GET http://localhost:3000/players/12/ HTTP/1.1
+###
+
+PUT http://localhost:3000/players/12/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "playerId": 12,
+    "playerName": "Ajay Paul",
+    "jerseyNumber": 27,
+    "role": "All-rounder"
+}
+###
+
+DELETE http://localhost:3000/players/12/ HTTP/1.1
